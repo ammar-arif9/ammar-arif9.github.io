@@ -1,2 +1,109 @@
-# ammar-arif9.github.io
-My Page
+# Hi, I'm Ammar 👋
+
+### Cloud & DevOps Engineer | AWS | Azure | Terraform | CI/CD | Linux
+
+I'm a Cloud / DevOps Engineer with 6+ years of experience working with cloud infrastructure, automation, CI/CD platforms, and production operations.
+
+My experience includes designing and provisioning infrastructure in **AWS and Azure**, building reusable **Terraform** solutions, managing CI/CD platforms, automating operational tasks, and supporting business-critical applications.
+
+I'm continuously expanding my knowledge in cloud architecture, infrastructure engineering, automation, and platform engineering.
+
+---
+
+## 🧑‍💻 About Me
+
+- ☁️ Cloud & DevOps / Infrastructure Engineer
+- 🏗️ Infrastructure as Code with Terraform
+- 🚀 CI/CD engineering and platform support
+- 🐧 Linux system administration
+- ⚙️ Infrastructure and operational automation
+- 🔧 AWS & Azure infrastructure provisioning
+- 📦 Container and application deployment
+- 🎯 Interested in Cloud Architecture, Platform Engineering, and Solution Architecture
+
+---
+
+## 🛠️ Technical Skills
+
+### Cloud Platforms
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+
+### Infrastructure as Code
+
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![Packer](https://img.shields.io/badge/Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+
+### CI/CD & DevOps
+
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
+
+**Other CI/CD experience**
+- Bamboo
+- CI/CD platform administration
+- Deployment pipelines
+- Infrastructure deployment pipelines
+
+### Operating Systems
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+
+### Scripting & Automation
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+
+### Containers & Cloud Services
+
+- Amazon ECS
+- AWS Lambda
+- IAM
+- Infrastructure automation
+- Application deployment
+- Cloud operations
+
+### Infrastructure
+
+- VMware vSphere
+- Linux Administration
+- Cloud Infrastructure
+- Production Operations
+- Incident Management
+- Infrastructure Automation
+
+---
+
+## 💼 What I Work On
+
+My current work focuses on:
+
+- Maintaining and supporting **CI/CD platforms such as GitHub and Azure DevOps**
+- Provisioning infrastructure in **AWS and Azure using Terraform**
+- Building and maintaining reusable infrastructure-as-code
+- Supporting application and product teams
+- Automating infrastructure and operational workflows
+- Troubleshooting infrastructure and deployment issues
+- Supporting production environments
+
+I've also worked in operational environments supporting critical applications and cloud platforms across AWS and Azure.
+
+---
+
+## 🧰 My DevOps Toolbox
+
+```text
+Cloud           AWS | Azure
+IaC             Terraform | Packer
+Configuration   Ansible
+CI/CD           GitHub | GitHub Actions | Azure DevOps | Bamboo
+Containers      Amazon ECS
+Scripting       Python | PowerShell | Bash
+OS              Linux | Windows
+Virtualization  VMware vSphere
+Automation      AWS Lambda | Infrastructure Automation
