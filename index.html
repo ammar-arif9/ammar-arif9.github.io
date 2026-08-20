@@ -1,109 +1,1371 @@
-# Hi, I'm Ammar 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07101d" />
+  <meta
+    name="description"
+    content="Ammar Adenan — DevOps Engineer specialising in AWS, Azure, Terraform, CI/CD, Linux and cloud infrastructure automation."
+  />
+  <title>Ammar Adenan | DevOps Engineer</title>
 
-### Cloud & DevOps Engineer | AWS | Azure | Terraform | CI/CD | Linux
+  <style>
+    :root {
+      --bg: #07101d;
+      --bg-soft: #0a1424;
+      --panel: rgba(16, 29, 49, .78);
+      --panel-strong: #0f1b2d;
+      --border: rgba(155, 184, 225, .14);
+      --border-strong: rgba(105, 225, 211, .28);
+      --text: #f5f7fb;
+      --muted: #9dafc7;
+      --blue: #68a7ff;
+      --cyan: #69e1d3;
+      --violet: #9d8cff;
+      --green: #86e7a6;
+      --yellow: #ffd66b;
+      --shadow: 0 28px 80px rgba(0, 0, 0, .28);
+      --radius: 22px;
+      --content: 1160px;
+    }
 
-I'm a Cloud / DevOps Engineer with 6+ years of experience working with cloud infrastructure, automation, CI/CD platforms, and production operations.
+    * {
+      box-sizing: border-box;
+    }
 
-My experience includes designing and provisioning infrastructure in **AWS and Azure**, building reusable **Terraform** solutions, managing CI/CD platforms, automating operational tasks, and supporting business-critical applications.
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
-I'm continuously expanding my knowledge in cloud architecture, infrastructure engineering, automation, and platform engineering.
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 7%, rgba(104, 167, 255, .14), transparent 29rem),
+        radial-gradient(circle at 88% 14%, rgba(105, 225, 211, .09), transparent 27rem),
+        linear-gradient(180deg, #07101d 0%, #081220 46%, #07101d 100%);
+      line-height: 1.65;
+    }
 
----
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .13;
+      background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, black, transparent 74%);
+      z-index: -1;
+    }
 
-## 🧑‍💻 About Me
+    ::selection {
+      background: rgba(105, 225, 211, .25);
+    }
 
-- ☁️ Cloud & DevOps / Infrastructure Engineer
-- 🏗️ Infrastructure as Code with Terraform
-- 🚀 CI/CD engineering and platform support
-- 🐧 Linux system administration
-- ⚙️ Infrastructure and operational automation
-- 🔧 AWS & Azure infrastructure provisioning
-- 📦 Container and application deployment
-- 🎯 Interested in Cloud Architecture, Platform Engineering, and Solution Architecture
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
----
+    .container {
+      width: min(92%, var(--content));
+      margin-inline: auto;
+    }
 
-## 🛠️ Technical Skills
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(7, 16, 29, .80);
+      backdrop-filter: blur(18px);
+    }
 
-### Cloud Platforms
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+    }
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: -.025em;
+    }
 
-### Infrastructure as Code
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(135deg, rgba(104,167,255,.19), rgba(105,225,211,.06));
+      color: var(--cyan);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .82rem;
+    }
 
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![Packer](https://img.shields.io/badge/Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 700;
+    }
 
-### CI/CD & DevOps
+    .nav-links a {
+      transition: .18s ease;
+    }
 
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
+    .nav-links a:hover {
+      color: var(--text);
+    }
 
-**Other CI/CD experience**
-- Bamboo
-- CI/CD platform administration
-- Deployment pipelines
-- Infrastructure deployment pipelines
+    .nav-cta {
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,.035);
+      color: var(--text) !important;
+    }
 
-### Operating Systems
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(310px, .75fr);
+      align-items: center;
+      gap: 58px;
+      padding: 84px 0 74px;
+    }
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 20px;
+      padding: 7px 11px;
+      border: 1px solid rgba(134,231,166,.18);
+      border-radius: 999px;
+      background: rgba(134,231,166,.055);
+      color: #bff2cd;
+      font-size: .8rem;
+      font-weight: 750;
+    }
 
-### Scripting & Automation
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(134,231,166,.08);
+    }
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+    .eyebrow {
+      margin-bottom: 10px;
+      color: var(--cyan);
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
 
-### Containers & Cloud Services
+    h1, h2, h3, h4, p {
+      margin-top: 0;
+    }
 
-- Amazon ECS
-- AWS Lambda
-- IAM
-- Infrastructure automation
-- Application deployment
-- Cloud operations
+    h1 {
+      margin-bottom: 22px;
+      max-width: 860px;
+      font-size: clamp(3.25rem, 7.8vw, 6.15rem);
+      line-height: .95;
+      letter-spacing: -.066em;
+    }
 
-### Infrastructure
+    h1 .accent {
+      display: inline-block;
+      background: linear-gradient(100deg, var(--blue), var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-- VMware vSphere
-- Linux Administration
-- Cloud Infrastructure
-- Production Operations
-- Incident Management
-- Infrastructure Automation
+    .hero-copy {
+      max-width: 720px;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.11rem);
+    }
 
----
+    .hero-copy strong {
+      color: #dfe8f7;
+      font-weight: 750;
+    }
 
-## 💼 What I Work On
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-My current work focuses on:
+    .btn {
+      min-height: 47px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 17px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: .9rem;
+      font-weight: 800;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
 
-- Maintaining and supporting **CI/CD platforms such as GitHub and Azure DevOps**
-- Provisioning infrastructure in **AWS and Azure using Terraform**
-- Building and maintaining reusable infrastructure-as-code
-- Supporting application and product teams
-- Automating infrastructure and operational workflows
-- Troubleshooting infrastructure and deployment issues
-- Supporting production environments
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(104,167,255,.35);
+    }
 
-I've also worked in operational environments supporting critical applications and cloud platforms across AWS and Azure.
+    .btn-primary {
+      border: 0;
+      background: linear-gradient(135deg, #4d91f7, #6c79f5);
+      box-shadow: 0 12px 30px rgba(77,145,247,.20);
+    }
 
----
+    .btn-ghost {
+      background: rgba(255,255,255,.035);
+    }
 
-## 🧰 My DevOps Toolbox
+    .terminal {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(5, 12, 23, .88);
+      box-shadow: var(--shadow);
+    }
 
-```text
-Cloud           AWS | Azure
-IaC             Terraform | Packer
-Configuration   Ansible
-CI/CD           GitHub | GitHub Actions | Azure DevOps | Bamboo
-Containers      Amazon ECS
-Scripting       Python | PowerShell | Bash
-OS              Linux | Windows
-Virtualization  VMware vSphere
-Automation      AWS Lambda | Infrastructure Automation
+    .terminal-bar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 14px 17px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.025);
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #394860;
+    }
+
+    .terminal-title {
+      margin-left: 7px;
+      color: #6f8098;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .72rem;
+    }
+
+    .terminal-body {
+      padding: 24px 22px 27px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .82rem;
+      color: #dce5f2;
+      line-height: 1.85;
+    }
+
+    .prompt { color: var(--cyan); }
+    .terminal-key { color: var(--blue); }
+    .terminal-val { color: #e9eef8; }
+    .comment { color: #65758f; }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .stat {
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 1.25rem;
+      letter-spacing: -.03em;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: .77rem;
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 510px);
+      align-items: end;
+      gap: 34px;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 0;
+      font-size: clamp(2.2rem, 4vw, 3.35rem);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+    }
+
+    .section-heading > p {
+      margin-bottom: 4px;
+      color: var(--muted);
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 16px 50px rgba(0,0,0,.10);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+    }
+
+    .about-copy {
+      padding: 29px;
+    }
+
+    .about-copy p {
+      margin-bottom: 16px;
+      color: #c8d3e4;
+      font-size: 1.01rem;
+    }
+
+    .about-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-facts {
+      display: grid;
+      gap: 12px;
+      padding: 24px;
+    }
+
+    .fact {
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .fact:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: .76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .fact-value {
+      color: #e6edf8;
+      font-weight: 750;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .skill-card {
+      padding: 23px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.03);
+      color: #d9e3f2;
+      font-size: .78rem;
+      font-weight: 650;
+    }
+
+    .tag.primary {
+      border-color: rgba(105,225,211,.23);
+      color: #b9efe8;
+      background: rgba(105,225,211,.045);
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 17px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      bottom: 18px;
+      left: 16px;
+      width: 1px;
+      background: linear-gradient(var(--cyan), rgba(104,167,255,.1));
+    }
+
+    .job {
+      position: relative;
+      margin-left: 40px;
+      padding: 26px 27px;
+    }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 30px;
+      width: 11px;
+      height: 11px;
+      border: 3px solid var(--bg);
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 1px rgba(105,225,211,.34);
+    }
+
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 13px;
+    }
+
+    .job h3 {
+      margin-bottom: 2px;
+      font-size: 1.22rem;
+      letter-spacing: -.02em;
+    }
+
+    .company {
+      color: var(--blue);
+      font-size: .93rem;
+      font-weight: 800;
+    }
+
+    .job-meta {
+      min-width: fit-content;
+      text-align: right;
+      color: var(--muted);
+      font-size: .8rem;
+      font-weight: 650;
+    }
+
+    .job ul {
+      margin: 0;
+      padding-left: 19px;
+      color: #becadc;
+    }
+
+    .job li + li {
+      margin-top: 7px;
+    }
+
+    .subrole {
+      margin-top: 21px;
+      padding-top: 19px;
+      border-top: 1px solid var(--border);
+    }
+
+    .subrole h4 {
+      margin-bottom: 4px;
+      font-size: .98rem;
+    }
+
+    .subrole-meta {
+      display: block;
+      margin-bottom: 11px;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 650;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .cert {
+      min-height: 120px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .cert-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255,255,255,.035);
+      font-size: 1.05rem;
+    }
+
+    .cert h3 {
+      margin-bottom: 5px;
+      font-size: .98rem;
+      line-height: 1.35;
+    }
+
+    .cert p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .project {
+      padding: 25px;
+    }
+
+    .project-badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 5px 8px;
+      border: 1px solid rgba(157,140,255,.18);
+      border-radius: 999px;
+      background: rgba(157,140,255,.05);
+      color: #c8c0ff;
+      font-size: .72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      font-size: 1.12rem;
+    }
+
+    .project p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 17px;
+    }
+
+    .edu-card,
+    .award-card {
+      padding: 25px;
+    }
+
+    .edu-entry + .edu-entry {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .edu-entry h3 {
+      margin-bottom: 3px;
+      font-size: 1.06rem;
+    }
+
+    .edu-entry p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .award-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .award {
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .contact-panel {
+      padding: 58px 28px;
+      text-align: center;
+      background:
+        linear-gradient(135deg, rgba(104,167,255,.075), rgba(105,225,211,.04)),
+        var(--panel);
+    }
+
+    .contact-panel h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      letter-spacing: -.05em;
+      line-height: 1;
+    }
+
+    .contact-panel p {
+      max-width: 630px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 35px 0 46px;
+      color: #71819b;
+      text-align: center;
+      font-size: .82rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .about-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .terminal {
+        max-width: 620px;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 64px;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 16vw, 4.4rem);
+      }
+
+      .quick-stats,
+      .skills-grid,
+      .cert-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .job {
+        margin-left: 27px;
+        padding: 21px;
+      }
+
+      .job::before {
+        left: -23px;
+      }
+
+      .timeline::before {
+        left: 10px;
+      }
+
+      .job-top {
+        display: block;
+      }
+
+      .job-meta {
+        margin-top: 8px;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&gt;_</span>
+        <span>Ammar Adenan</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div>
+        <div class="status">
+          <span class="status-dot"></span>
+          Cloud · DevOps · Infrastructure
+        </div>
+
+        <div class="eyebrow">DevOps Engineer</div>
+
+        <h1>
+          Building resilient cloud
+          <span class="accent">infrastructure.</span>
+        </h1>
+
+        <p class="hero-copy">
+          I'm <strong>Ammar Adenan</strong>, a Cloud &amp; IT Infrastructure
+          professional with 7 years of experience across
+          <strong>AWS, Azure, Linux, CI/CD and Infrastructure as Code</strong>.
+          I focus on secure, scalable systems, automation and reliable operations.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#experience">View Experience ↓</a>
+          <a
+            class="btn btn-ghost"
+            href="https://www.linkedin.com/in/ammararif9/"
+            target="_blank"
+            rel="noreferrer"
+          >LinkedIn ↗</a>
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/ammar-arif9"
+            target="_blank"
+            rel="noreferrer"
+          >GitHub ↗</a>
+        </div>
+
+        <div class="quick-stats">
+          <div class="stat">
+            <strong>7 Years</strong>
+            <span>IT infrastructure experience</span>
+          </div>
+          <div class="stat">
+            <strong>2 Clouds</strong>
+            <span>AWS &amp; Microsoft Azure</span>
+          </div>
+          <div class="stat">
+            <strong>5 Certs</strong>
+            <span>Cloud &amp; Terraform</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="terminal" aria-label="Technical profile">
+        <div class="terminal-bar">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="terminal-title">ammar@cloud:~</span>
+        </div>
+
+        <div class="terminal-body">
+          <div><span class="prompt">$</span> cat profile.yml</div>
+          <br>
+          <div><span class="terminal-key">role:</span> <span class="terminal-val">DevOps Engineer</span></div>
+          <div><span class="terminal-key">cloud:</span> <span class="terminal-val">[AWS, Azure]</span></div>
+          <div><span class="terminal-key">iac:</span> <span class="terminal-val">[Terraform, Packer]</span></div>
+          <div><span class="terminal-key">automation:</span> <span class="terminal-val">[PowerShell, Bash, Ansible]</span></div>
+          <div><span class="terminal-key">platforms:</span> <span class="terminal-val">[GitHub, Azure DevOps]</span></div>
+          <div><span class="terminal-key">systems:</span> <span class="terminal-val">[Linux, Windows]</span></div>
+          <div><span class="terminal-key">location:</span> <span class="terminal-val">Kuala Lumpur, MY</span></div>
+          <br>
+          <div class="comment"># resilient systems, repeatable automation</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">About Me</div>
+            <h2>Cloud engineering with an infrastructure foundation.</h2>
+          </div>
+
+          <p>
+            My experience spans cloud operations, infrastructure engineering,
+            system administration, automation, networking and security —
+            giving me a broad view of how production systems fit together.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel about-copy">
+            <p>
+              I specialise in cloud infrastructure across AWS and Microsoft Azure,
+              with strong hands-on experience in Linux systems and Infrastructure
+              as Code using Terraform and Packer.
+            </p>
+
+            <p>
+              My work has covered CI/CD engineering, production support,
+              infrastructure automation, virtualization, vulnerability management,
+              logging and monitoring, network security, application operations and
+              incident response.
+            </p>
+
+            <p>
+              I enjoy reducing manual work through automation, improving operational
+              reliability and building repeatable infrastructure patterns that make
+              systems easier to deploy, support and scale.
+            </p>
+          </div>
+
+          <aside class="panel profile-facts">
+            <div class="fact">
+              <span class="fact-label">Current Role</span>
+              <span class="fact-value">DevOps Engineer · The Access Group</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Kuala Lumpur, Malaysia</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">Malay · English</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Core Focus</span>
+              <span class="fact-value">Cloud · IaC · CI/CD · Linux</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Technical Skills</div>
+            <h2>Cloud, automation and operations.</h2>
+          </div>
+
+          <p>
+            Technologies used across production infrastructure, engineering,
+            monitoring, deployment and security work.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="panel skill-card">
+            <h3>☁ Cloud Platforms</h3>
+            <div class="tags">
+              <span class="tag primary">AWS</span>
+              <span class="tag primary">Microsoft Azure</span>
+              <span class="tag">EC2</span>
+              <span class="tag">Azure VM</span>
+              <span class="tag">AWS Systems Manager</span>
+              <span class="tag">Azure App Service</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>🏗 Infrastructure as Code</h3>
+            <div class="tags">
+              <span class="tag primary">Terraform</span>
+              <span class="tag primary">Packer</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">Automated Builds</span>
+              <span class="tag">Provisioning</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>🚀 CI/CD &amp; DevOps</h3>
+            <div class="tags">
+              <span class="tag primary">GitHub</span>
+              <span class="tag primary">Azure DevOps</span>
+              <span class="tag">CI/CD Pipelines</span>
+              <span class="tag">Release Automation</span>
+              <span class="tag">Application Lifecycle</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>🐧 Systems &amp; Virtualization</h3>
+            <div class="tags">
+              <span class="tag primary">Linux</span>
+              <span class="tag">RHEL 7 / 8</span>
+              <span class="tag">Windows</span>
+              <span class="tag">VMware</span>
+              <span class="tag">Virtual Desktop</span>
+              <span class="tag">IIS</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>⚙ Automation &amp; Scripting</h3>
+            <div class="tags">
+              <span class="tag primary">PowerShell</span>
+              <span class="tag primary">Bash</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">EventBridge</span>
+              <span class="tag">SharePoint Automation</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>📈 Monitoring &amp; Security</h3>
+            <div class="tags">
+              <span class="tag primary">Splunk</span>
+              <span class="tag">Tenable.sc</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">Kinesis</span>
+              <span class="tag">Firewalls</span>
+              <span class="tag">Vulnerability Remediation</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>🔌 Networking &amp; Infrastructure</h3>
+            <div class="tags">
+              <span class="tag">Routing</span>
+              <span class="tag">Switching</span>
+              <span class="tag">Firewall Policies</span>
+              <span class="tag">CSM</span>
+              <span class="tag">FMC</span>
+              <span class="tag">Junos Space</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>📦 Containers &amp; Platforms</h3>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">OpenShift</span>
+              <span class="tag">Microsoft SCCM</span>
+              <span class="tag">Micro Focus ArcSight</span>
+            </div>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>🛠 Operations</h3>
+            <div class="tags">
+              <span class="tag">Incident Response</span>
+              <span class="tag">Production Support</span>
+              <span class="tag">Patching</span>
+              <span class="tag">Troubleshooting</span>
+              <span class="tag">High Availability</span>
+              <span class="tag">24/7 Support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Experience</div>
+            <h2>From infrastructure engineering to DevOps.</h2>
+          </div>
+
+          <p>
+            A career progression across enterprise infrastructure, cloud operations,
+            automation and modern DevOps engineering.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>DevOps Engineer</h3>
+                <div class="company">The Access Group</div>
+              </div>
+              <div class="job-meta">Oct 2025 — Present<br>Kuala Lumpur</div>
+            </div>
+
+            <ul>
+              <li>Manage and optimise CI/CD processes using GitHub and Azure DevOps.</li>
+              <li>Provision and automate AWS and Azure infrastructure using Terraform.</li>
+              <li>Collaborate with product teams to identify gaps, improve processes and maintain reliable system operations.</li>
+            </ul>
+          </article>
+
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>Senior Cloud Engineer</h3>
+                <div class="company">Singtel</div>
+              </div>
+              <div class="job-meta">Nov 2024 — Oct 2025<br>Kuala Lumpur</div>
+            </div>
+
+            <ul>
+              <li>Supported Azure and AWS environments across incidents, service requests and critical outages.</li>
+              <li>Supported application lifecycles through CI/CD pipelines aligned with Singtel automation standards.</li>
+              <li>Supported critical platforms including My Singtel App, hiApp and Singtel websites with focus on availability and performance.</li>
+            </ul>
+          </article>
+
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>Infrastructure Engineer</h3>
+                <div class="company">BAE Systems Digital Intelligence</div>
+              </div>
+              <div class="job-meta">May 2023 — Nov 2024<br>Kuala Lumpur</div>
+            </div>
+
+            <ul>
+              <li>Supported enterprise on-premises virtualization and end-user computing platforms.</li>
+              <li>Implemented automated build and deployment workflows to standardise virtual machine images.</li>
+              <li>Developed automation scripts to reduce manual provisioning and improve virtual desktop consistency.</li>
+              <li>Resolved complex Linux and Windows workstation issues for a geographically distributed user base.</li>
+            </ul>
+          </article>
+
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>System Engineer</h3>
+                <div class="company">Xtremax</div>
+              </div>
+              <div class="job-meta">Jun 2022 — May 2023<br>Singapore</div>
+            </div>
+
+            <ul>
+              <li>Supported AWS and Azure environments as part of the GovTech CTS team.</li>
+              <li>Managed EC2 and Azure VM maintenance, patching, security and compliance.</li>
+              <li>Administered Azure VMs running RHEL 7 and 8 and supported hosted applications.</li>
+              <li>Used Tenable.sc for vulnerability and compliance detection and remediation.</li>
+              <li>Used Splunk for VM monitoring, logging and proactive issue resolution.</li>
+              <li>Provided 24/7 standby support for cloud downtime and production incidents.</li>
+            </ul>
+
+            <div class="subrole">
+              <h4>Associate System Engineer</h4>
+              <span class="subrole-meta">Oct 2021 — Jun 2022 · Kuala Lumpur</span>
+              <ul>
+                <li>Delivered a Splunk cluster architecture PoC on AWS for GovTech agencies.</li>
+                <li>Created Splunk logging and monitoring use cases using EC2, ELB, CloudWatch and Kinesis.</li>
+                <li>Automated EC2 start/stop maintenance using EventBridge and Lambda.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>IT Engineer</h3>
+                <div class="company">ExxonMobil</div>
+              </div>
+              <div class="job-meta">Nov 2019 — Oct 2021<br>Kuala Lumpur</div>
+            </div>
+
+            <ul>
+              <li>Defined and supported network routing and security policies across routers, switches and firewalls.</li>
+              <li>Managed firewall platforms including CSM, FMC and Junos Space.</li>
+              <li>Handled escalations and consultations for network and security best-practice deviations.</li>
+              <li>Automated repetitive SharePoint processes with PowerShell.</li>
+              <li>Developed a chatbot hosted on Azure App Service and integrated with OpenShift, presented at an innovation Demo &amp; Hackathon.</li>
+              <li>Contributed to development work for ExxonMobil's KLGBC site using the Unity Framework.</li>
+            </ul>
+          </article>
+
+          <article class="panel job">
+            <div class="job-top">
+              <div>
+                <h3>Graduate L3 Infrastructure Engineer</h3>
+                <div class="company">BAE Systems Applied Intelligence</div>
+              </div>
+              <div class="job-meta">Feb 2019 — Oct 2019</div>
+            </div>
+
+            <ul>
+              <li>Deployed physical and virtual systems including servers, workstations, network equipment and infrastructure services.</li>
+              <li>Acted as an escalation point for capacity, network access, privilege management and estate monitoring issues.</li>
+              <li>Used Microsoft Azure to provision production servers and infrastructure.</li>
+              <li>Delivered AWS Proof of Concept work involving Docker, Microsoft SCCM and Micro Focus ArcSight.</li>
+              <li>Automated Linux infrastructure tasks using Bash and Ansible.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Certifications</div>
+            <h2>Validated cloud and IaC knowledge.</h2>
+          </div>
+
+          <p>
+            Certifications spanning AWS, Microsoft Azure and HashiCorp Terraform.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="panel cert">
+            <div class="cert-icon">AWS</div>
+            <div>
+              <h3>AWS Certified Solutions Architect – Associate</h3>
+              <p>Amazon Web Services</p>
+            </div>
+          </article>
+
+          <article class="panel cert">
+            <div class="cert-icon">AWS</div>
+            <div>
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p>Amazon Web Services</p>
+            </div>
+          </article>
+
+          <article class="panel cert">
+            <div class="cert-icon">AZ</div>
+            <div>
+              <h3>Microsoft Certified: Azure Administrator Associate</h3>
+              <p>Microsoft</p>
+            </div>
+          </article>
+
+          <article class="panel cert">
+            <div class="cert-icon">AZ</div>
+            <div>
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+              <p>Microsoft</p>
+            </div>
+          </article>
+
+          <article class="panel cert">
+            <div class="cert-icon">TF</div>
+            <div>
+              <h3>HashiCorp Certified: Terraform Associate (003)</h3>
+              <p>HashiCorp</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Selected Work</div>
+            <h2>Projects and technical highlights.</h2>
+          </div>
+
+          <p>
+            Examples of hands-on engineering work highlighted in my professional experience.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="panel project">
+            <span class="project-badge">Cloud / Observability</span>
+            <h3>Splunk Cluster PoC on AWS</h3>
+            <p>
+              Built a Proof of Concept Splunk cluster architecture for GovTech agencies
+              and created logging use cases using EC2, ELB, CloudWatch and Kinesis.
+            </p>
+            <div class="tags">
+              <span class="tag">AWS</span>
+              <span class="tag">Splunk</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">Kinesis</span>
+            </div>
+          </article>
+
+          <article class="panel project">
+            <span class="project-badge">Automation</span>
+            <h3>EC2 Maintenance Automation</h3>
+            <p>
+              Automated scheduled EC2 start/stop maintenance using AWS EventBridge
+              and Lambda to reduce repetitive operational work.
+            </p>
+            <div class="tags">
+              <span class="tag">EventBridge</span>
+              <span class="tag">Lambda</span>
+              <span class="tag">EC2</span>
+            </div>
+          </article>
+
+          <article class="panel project">
+            <span class="project-badge">Cloud Application</span>
+            <h3>Azure Chatbot Application</h3>
+            <p>
+              Developed and deployed a chatbot on Microsoft Azure App Service,
+              integrated with OpenShift, and presented it at an innovation Demo &amp; Hackathon.
+            </p>
+            <div class="tags">
+              <span class="tag">Azure App Service</span>
+              <span class="tag">OpenShift</span>
+              <span class="tag">Application Development</span>
+            </div>
+          </article>
+
+          <article class="panel project">
+            <span class="project-badge">Infrastructure Automation</span>
+            <h3>Virtual Machine Build Automation</h3>
+            <p>
+              Implemented automated build and deployment workflows for standardised
+              VM images and developed scripts to reduce manual virtual desktop provisioning.
+            </p>
+            <div class="tags">
+              <span class="tag">Automation</span>
+              <span class="tag">Virtualization</span>
+              <span class="tag">Packer</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Education &amp; Recognition</div>
+            <h2>Academic foundation.</h2>
+          </div>
+
+          <p>
+            Computer Science and Engineering studies, with Dean's List recognition.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <article class="panel edu-card">
+            <div class="edu-entry">
+              <h3>University of Malaya</h3>
+              <p>Bachelor's Degree, Computer Science · 2015 — 2019</p>
+            </div>
+
+            <div class="edu-entry">
+              <h3>Universiti Teknologi MARA</h3>
+              <p>Foundation, Engineering · 2014 — 2015</p>
+            </div>
+          </article>
+
+          <aside class="panel award-card">
+            <div class="eyebrow">Honours &amp; Awards</div>
+            <div class="award-list">
+              <div class="award">🏅 Dean List Award — Semester 7</div>
+              <div class="award">🏅 Dean List Award — Semester 5</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="panel contact-panel">
+          <div class="eyebrow">Contact</div>
+          <h2>Let's connect.</h2>
+
+          <p>
+            Interested in cloud infrastructure, DevOps, automation and
+            architecture-focused engineering opportunities.
+          </p>
+
+          <div class="actions" style="justify-content:center">
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/ammararif9/"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn ↗</a>
+
+            <a
+              class="btn btn-ghost"
+              href="mailto:ammararif9@yahoo.com"
+            >Email</a>
+
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/ammar-arif9"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Ammar Adenan · Built for GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
